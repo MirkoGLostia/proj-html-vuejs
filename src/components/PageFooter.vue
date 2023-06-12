@@ -99,6 +99,16 @@ export default {
                 </form>
 
                 <button>submit</button>
+
+                <!-- bonus -->
+                <div>
+                    <!-- in caso di invio messaggio, questo div andrà a sostituire il form con messaggio positivo o negativo -->
+                    <div>
+                        <!-- messaggio -->
+                    </div>
+                    <!-- e un bottone per reinviare un altro messaggio -->
+                    <button></button>
+                </div>
             </section>
         </section>
     </footer>
