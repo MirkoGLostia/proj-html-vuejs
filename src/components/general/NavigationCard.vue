@@ -8,7 +8,7 @@ export default {
 </script>
 
 <template>
-    <div>
+    <div class="navigation-card-style">
         <img :src="`/img/${details.image}.png`">
         <h5>
             {{ details.title }}
@@ -20,10 +20,10 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-@use './../styles/partials/variables' as v;
-@use './../styles/partials/mixins' as *;
+@use './../../styles/partials/variables' as v;
+@use './../../styles/partials/mixins' as *;
 
-div {
+.navigation-card-style {
     text-align: center;
     padding: 50px;
 

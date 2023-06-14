@@ -1,7 +1,7 @@
 <script>
 import { store } from './../store';
-import TitleGeneral from './TitleGeneral.vue';
-import NavigationCard from './NavigationCard.vue';
+import TitleGeneral from './general/TitleGeneral.vue';
+import NavigationCard from './general/NavigationCard.vue';
 
 export default {
     name: "PageFooter",

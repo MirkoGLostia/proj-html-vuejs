@@ -1,7 +1,7 @@
 <script>
 import { store } from './../store';
-import NavigationMenu from './NavigationMenu.vue';
-import Banner from './Banner.vue';
+import NavigationMenu from './headerComponents/NavigationMenu.vue';
+import Banner from './general/Banner.vue';
 
 export default {
     name: "PageHeader",

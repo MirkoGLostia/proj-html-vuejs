@@ -1,12 +1,17 @@
 <script>
+import WelcomeSect from './mainComponents/WelcomeSect.vue';
+
 export default {
-    name: "PageMain"
+    name: "PageMain",
+    components: {
+        WelcomeSect
+    }
 }
 </script>
 
 <template>
     <main>
-        main part
+        <WelcomeSect />
     </main>
 </template>
 
