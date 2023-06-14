@@ -20,10 +20,37 @@ export default {
 <template>
     <footer>
         <!-- componente mappa -->
-        <section>
+        <section id="map-container">
             <!-- mappa -->
-            <div>
+            <div id="map-puzzle">
                 <!-- serie di immagini prese da cartella img ricomposte a formare una mappa, sfondo con funzione di z-index -->
+                <div class="map-piece"></div>
+                <div class="map-piece"></div>
+                <div class="map-piece"></div>
+                <div class="map-piece"></div>
+                <div class="map-piece"></div>
+                <div class="map-piece"></div>
+                <div class="map-piece"></div>
+                <div class="map-piece"></div>
+                <div class="map-piece"></div>
+                <div class="map-piece"></div>
+                <div class="map-piece"></div>
+                <div class="map-piece"></div>
+                <div class="map-piece"></div>
+                <div class="map-piece"></div>
+                <div class="map-piece"></div>
+                <div class="map-piece"></div>
+                <div class="map-piece"></div>
+                <div class="map-piece"></div>
+                <div class="map-piece"></div>
+                <div class="map-piece"></div>
+                <div class="map-piece"></div>
+                <div class="map-piece"></div>
+                <div class="map-piece"></div>
+                <div class="map-piece"></div>
+                <div class="map-piece"></div>
+                <div class="map-piece"></div>
+                <div class="map-piece"></div>
             </div>
             <div>
                 <!-- contenitore per div di interazione con la mappa, andrà in primo piano con z-index -->
@@ -64,32 +91,22 @@ export default {
             </nav>
 
             <!-- sub-component form messaggio diretto -->
-            <section>
+            <section id="form-container">
                 <form>
                     <div>
                         <!-- sx info brevi -->
-                        <input type="text">
-                        <input type="text">
-                        <input type="text">
+                        <input type="text" placeholder="your name">
+                        <input type="text" placeholder="your e-mail">
+                        <input type="text" placeholder="subject">
                     </div>
 
                     <div>
                         <!-- dx messaggio diretto -->
-                        <input type="text">
+                        <textarea name="" id="" cols="30" rows="8" placeholder="your message"></textarea>
                     </div>
                 </form>
 
-                <button>submit</button>
-
-                <!-- bonus -->
-                <div>
-                    <!-- in caso di invio messaggio, questo div andrà a sostituire il form con messaggio positivo o negativo -->
-                    <div>
-                        <!-- messaggio -->
-                    </div>
-                    <!-- e un bottone per reinviare un altro messaggio -->
-                    <button></button>
-                </div>
+                <button>send message</button>
             </section>
         </section>
     </footer>
@@ -98,4 +115,45 @@ export default {
 <style lang="scss" scoped>
 @use './../styles/partials/variables' as v;
 @use './../styles/partials/mixins' as *;
+
+#map-container {
+
+    #map-puzzle {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .map-piece {
+        width: calc(100% / 9);
+        height: calc(100vw / 9);
+
+        // debug
+        background-color: black;
+        border: 1px solid white;
+    }
+}
+
+#form-container {
+    @include myBaseContainerCenter;
+    flex-direction: column;
+    margin-bottom: 50px;
+
+    form {
+        display: flex;
+
+        input,
+        textarea {
+            width: 600px;
+            margin: 20px;
+            padding: 15px;
+            font-size: 22px;
+            resize: none;
+        }
+
+    }
+
+    button {
+        @include myButton;
+    }
+}
 </style>

@@ -24,6 +24,9 @@ export default {
             <NavigationCard :details="info" :class="{ 'violet': info.id % 2 === 0, '': !info.id % 2 !== 0 }" />
         </div>
     </section>
+    <section>
+        <!-- carousel -->
+    </section>
 </template>
 
 <style lang="scss">

@@ -142,12 +142,7 @@ nav {
         }
 
         button {
-            background-color: v.$myBlazeOrange;
-            margin-top: 50px;
-            font-size: 18px;
-            border: none;
-            padding: 20px;
-            color: white;
+            @include myButton;
         }
     }
 
