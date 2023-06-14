@@ -33,16 +33,23 @@ export default {
         </nav>
 
         <!-- componente jumbotron -->
-        <section>
+        <section id="jumbotron">
             <!-- immagini in background (da far ruotare con timer come bonus) -->
             <div>
                 <!-- 3 titoli con stili diversi da rivedere alla fine pre bonus -->
-                <h3></h3>
-                <h1></h1>
-                <h2></h2>
+                <h3>
+                    Friendly Atmosphere
+                </h3>
+                <h1>
+                    Welcoming Place
+                </h1>
+                <h2>
+                    For Every Child
+                </h2>
 
                 <button>
                     <!-- button da rivedere commissione per hover -->
+                    BUY THIS THEME NOW
                 </button>
             </div>
         </section>
@@ -102,6 +109,49 @@ nav {
                 font-size: 20px;
                 font-weight: 700;
             }
+        }
+    }
+
+}
+
+#jumbotron {
+    height: 750px;
+    background: linear-gradient(to bottom,
+            rgb(238, 246, 254) 0%,
+            rgb(238, 246, 254) 65%,
+            rgb(235, 241, 237) 65%,
+            rgb(235, 241, 237) 100%);
+
+    font-size: 40px;
+    color: v.$myButterflyBush;
+
+    div {
+        @include myBaseContainerCenter;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-top: 200px;
+
+        h3 {
+            color: v.$myBlazeOrange;
+            font-style: italic;
+            font-weight: 100;
+        }
+
+        h1 {
+            font-size: 70px;
+        }
+
+        h2 {
+            font-weight: 100;
+        }
+
+        button {
+            background-color: v.$myBlazeOrange;
+            margin-top: 50px;
+            font-size: 18px;
+            border: none;
+            padding: 20px;
+            color: white;
         }
     }
 
