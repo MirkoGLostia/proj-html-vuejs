@@ -1,6 +1,11 @@
 <script>
+import TitleGeneral from './TitleGeneral.vue';
+
 export default {
-    name: "PageFooter"
+    name: "PageFooter",
+    components: {
+        TitleGeneral
+    }
 }
 </script>
 
@@ -40,11 +45,7 @@ export default {
         <!-- componente info -->
         <section>
             <!-- titolo, creare una component, ripetizione nel main -->
-            <div>
-                <h4></h4>
-                <span></span>
-                <img src="" alt="">
-            </div>
+            <TitleGeneral title="Contact Us" message="Our postal address and contact details" />
 
             <!-- sub-component navigazione -->
             <nav>
