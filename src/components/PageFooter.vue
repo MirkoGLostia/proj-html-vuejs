@@ -1,10 +1,18 @@
 <script>
+import { store } from './../store';
 import TitleGeneral from './TitleGeneral.vue';
+import NavigationCard from './NavigationCard.vue';
 
 export default {
     name: "PageFooter",
     components: {
-        TitleGeneral
+        TitleGeneral,
+        NavigationCard
+    },
+    data() {
+        return {
+            store,
+        }
     }
 }
 </script>
@@ -50,12 +58,8 @@ export default {
             <!-- sub-component navigazione -->
             <nav>
                 <!-- serie di link per ricavare informazioni, creare delle card da ciclare -->
-                <div>
-                    <img src="" alt="">
-                    <h5></h5>
-                    <span></span>
-                    <span></span>
-                    <span></span>
+                <div v-for="data in store.navMenuFoot" :key="data.id">
+                    <NavigationCard :details="data" />
                 </div>
             </nav>
 

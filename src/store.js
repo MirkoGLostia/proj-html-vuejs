@@ -44,5 +44,31 @@ export const store = reactive({
             sector: "Contact",
             state: "inactive"
         }
+    ],
+    navMenuFoot: [
+        {
+            id: 1,
+            image: "envelopeOran",
+            title: "Postal Address",
+            text: ["Fable Care Center", "85 Fentiman Ave", "Ottawa, ON K1S 0T7"]
+        },
+        {
+            id: 2,
+            image: "mobile",
+            title: "Phone & E-mail",
+            text: ["Phone: 1-800-64-38", "Fax: 1-800-64-39", "<a href='#'>office@fable.com</a>"]
+        },
+        {
+            id: 3,
+            image: "clock",
+            title: "Business Hours",
+            text: ["Monday - Friday", "8.00 am - 5.00 pm", "Weekend Closed"]
+        },
+        {
+            id: 4,
+            image: "documentOran",
+            title: "Sessions",
+            text: ["Mornings, 8 am - 12 noon", "Afternoons, 1 pm - 5 pm", "Full Day, 8 am - 5 pm"]
+        }
     ]
 })
