@@ -9,7 +9,9 @@ export default {
 
 <template>
     <div class="navigation-card-style">
-        <img :src="`/img/${details.image}.png`">
+        <div>
+            <img :src="`/img/${details.image}.png`">
+        </div>
         <h5>
             {{ details.title }}
         </h5>
@@ -19,7 +21,7 @@ export default {
     </div>
 </template>
 
-<style lang="scss" scoped>
+<style lang="scss">
 @use './../../styles/partials/variables' as v;
 @use './../../styles/partials/mixins' as *;
 

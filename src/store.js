@@ -70,5 +70,31 @@ export const store = reactive({
             title: "Sessions",
             text: ["Mornings, 8 am - 12 noon", "Afternoons, 1 pm - 5 pm", "Full Day, 8 am - 5 pm"]
         }
+    ],
+    welcomeSectNav: [
+        {
+            id: 1,
+            image: "schoolbag_alt",
+            title: "Morbi Etos",
+            text: ["Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, iusto magnam? Alias perferendis est eaque exercitationem id vel sunt soluta iusto expedita laboriosam. At, quos laboriosam asperiores iste tempora dolore!"]
+        },
+        {
+            id: 2,
+            image: "stroller_alt",
+            title: "Congue Gravida",
+            text: ["Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, iusto magnam? Alias perferendis est eaque exercitationem id vel sunt soluta iusto expedita laboriosam. At, quos laboriosam asperiores iste tempora dolore!"]
+        },
+        {
+            id: 3,
+            image: "globe_alt",
+            title: "Maecenas Node",
+            text: ["Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, iusto magnam? Alias perferendis est eaque exercitationem id vel sunt soluta iusto expedita laboriosam. At, quos laboriosam asperiores iste tempora dolore!"]
+        },
+        {
+            id: 4,
+            image: "bell_alt",
+            title: "Praesent Morbi",
+            text: ["Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, iusto magnam? Alias perferendis est eaque exercitationem id vel sunt soluta iusto expedita laboriosam. At, quos laboriosam asperiores iste tempora dolore!"]
+        }
     ]
 })

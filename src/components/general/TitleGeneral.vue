@@ -27,6 +27,7 @@ export default {
 div {
     @include myBaseContainerCenter;
     flex-direction: column;
+    padding-top: 60px;
 
     h4 {
         color: v.$myButterflyBush;
