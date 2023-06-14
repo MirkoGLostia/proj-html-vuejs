@@ -39,7 +39,7 @@ export default {
 
         <!-- componente info -->
         <section>
-            <!-- titolo -->
+            <!-- titolo, creare una component, ripetizione nel main -->
             <div>
                 <h4></h4>
                 <span></span>
@@ -48,31 +48,7 @@ export default {
 
             <!-- sub-component navigazione -->
             <nav>
-                <!-- serie di link per ricavare informazioni -->
-                <div>
-                    <img src="" alt="">
-                    <h5></h5>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-
-                <div>
-                    <img src="" alt="">
-                    <h5></h5>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-
-                <div>
-                    <img src="" alt="">
-                    <h5></h5>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-
+                <!-- serie di link per ricavare informazioni, creare delle card da ciclare -->
                 <div>
                     <img src="" alt="">
                     <h5></h5>
