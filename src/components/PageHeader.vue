@@ -1,11 +1,13 @@
 <script>
 import { store } from './../store';
 import NavigationMenu from './NavigationMenu.vue';
+import Banner from './Banner.vue';
 
 export default {
     name: "PageHeader",
     components: {
-        NavigationMenu
+        NavigationMenu,
+        Banner
     },
     data() {
         return {
@@ -56,13 +58,7 @@ export default {
 
         <!-- sezione con messaggio di indirizzamento -->
         <section>
-            <h3>
-                <!-- messaggio -->
-            </h3>
-
-            <button>
-                <!-- button da rivedere commissione per hover -->
-            </button>
+            <Banner message="How to Enroll Your Child to a Class?" btnMex="LEARN MORE  >" />
         </section>
     </header>
 </template>
