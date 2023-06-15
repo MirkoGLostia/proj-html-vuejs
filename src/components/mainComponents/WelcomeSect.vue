@@ -25,7 +25,12 @@ export default {
         </div>
     </section>
     <section>
-        <!-- carousel -->
+        <div>
+            <!-- sezione sinistra, due schede con info -->
+        </div>
+        <div>
+            <!-- sezione sinistra con carosello -->
+        </div>
     </section>
 </template>
 

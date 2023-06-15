@@ -16,6 +16,7 @@ export default {
 </script>
 
 <template>
+    <!-- titolo sezione -->
     <section>
         <TitleGeneral title="Our Classes" message="Our preschool program has four dedicated classes" />
         <div class="description">
@@ -32,6 +33,8 @@ export default {
             </div>
         </div>
     </section>
+
+    <!-- contenitore card classi -->
     <section id="main-class-card-container">
         <div v-for="data in store.classCardData" :key="data.id">
             <div class="class-card-info">
@@ -64,6 +67,17 @@ export default {
                 <img :src="`/img/${data.image}.jpg`" alt="">
                 <button>READ MORE ></button>
             </div>
+        </div>
+    </section>
+
+    <!-- ultima sezione con info sui corsi -->
+    <section>
+        <div>
+            <!-- info generali -->
+        </div>
+
+        <div>
+            <!-- sezione di 4 card da componente: NavigationCard da componenti generali -->
         </div>
     </section>
 </template>

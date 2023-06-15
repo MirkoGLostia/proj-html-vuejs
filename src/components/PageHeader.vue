@@ -36,7 +36,15 @@ export default {
 
         <!-- componente jumbotron -->
         <section id="jumbotron">
-            <!-- immagini in background (da far ruotare con timer come bonus) -->
+            <!-- immagini in background -->
+            <img id="jumbo-boy-img" src="/jumboimg/slider_slide2_img1.png" alt="">
+            <img id="jumbo-girl-img" src="/jumboimg/slider_slide2_img2.png" alt="">
+            <img id="jumbo-potion-img" src="/jumboimg/slider_icon13.png" alt="">
+            <img id="jumbo-train-img" src="/jumboimg/slider_icon12.png" alt="">
+            <img id="jumbo-brush-img" src="/jumboimg/slider_icon11.png" alt="">
+            <img id="jumbo-pigtail-img" src="/jumboimg/slider_icon14.png" alt="">
+            <img id="jumbo-cubes-img" src="/jumboimg/slider_icon16.png" alt="">
+
             <div>
                 <!-- 3 titoli con stili diversi da rivedere alla fine pre bonus -->
                 <h3>
@@ -120,6 +128,63 @@ nav {
 
     font-size: 40px;
     color: v.$myButterflyBush;
+    position: relative;
+
+    #jumbo-boy-img {
+        height: 650px;
+        position: absolute;
+        z-index: 10;
+        bottom: 5vh;
+        left: 45vw;
+    }
+
+    #jumbo-girl-img {
+        height: 550px;
+        position: absolute;
+        z-index: 9;
+        bottom: 12vh;
+        left: 65vw;
+    }
+
+    #jumbo-potion-img {
+        height: 120px;
+        position: absolute;
+        z-index: 9;
+        bottom: 60vh;
+        left: 53vw;
+    }
+
+    #jumbo-train-img {
+        height: 95px;
+        position: absolute;
+        z-index: 9;
+        bottom: 55vh;
+        left: 45vw;
+    }
+
+    #jumbo-brush-img {
+        height: 95px;
+        position: absolute;
+        z-index: 9;
+        bottom: 65vh;
+        left: 40vw;
+    }
+
+    #jumbo-pigtail-img {
+        height: 55px;
+        position: absolute;
+        z-index: 9;
+        bottom: 60vh;
+        left: 36vw;
+    }
+
+    #jumbo-cubes-img {
+        height: 90px;
+        position: absolute;
+        z-index: 9;
+        bottom: 65vh;
+        left: 30vw;
+    }
 
     div {
         @include myBaseContainerCenter;

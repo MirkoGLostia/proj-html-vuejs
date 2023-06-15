@@ -56,7 +56,7 @@ export const store = reactive({
             id: 2,
             image: "mobile",
             title: "Phone & E-mail",
-            text: ["Phone: 1-800-64-38", "Fax: 1-800-64-39", "<a href='#'>office@fable.com</a>"]
+            text: ["Phone: 1-800-64-38", "Fax: 1-800-64-39", "office@fable.com"]
         },
         {
             id: 3,

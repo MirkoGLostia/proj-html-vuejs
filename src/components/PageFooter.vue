@@ -79,12 +79,11 @@ export default {
 
         <!-- componente info -->
         <section>
-            <!-- titolo, creare una component, ripetizione nel main -->
+            <!-- titolo -->
             <TitleGeneral title="Contact Us" message="Our postal address and contact details" />
 
-            <!-- sub-component navigazione -->
+            <!-- card di navigazione -->
             <nav>
-                <!-- serie di link per ricavare informazioni, creare delle card da ciclare -->
                 <div v-for="data in store.navMenuFoot" :key="data.id">
                     <NavigationCard :details="data" />
                 </div>
