@@ -1,10 +1,12 @@
 <script>
 import WelcomeSect from './mainComponents/WelcomeSect.vue';
+import ClassesSect from './mainComponents/ClassesSect.vue';
 
 export default {
     name: "PageMain",
     components: {
-        WelcomeSect
+        WelcomeSect,
+        ClassesSect
     }
 }
 </script>
@@ -12,6 +14,8 @@ export default {
 <template>
     <main>
         <WelcomeSect />
+
+        <ClassesSect />
     </main>
 </template>
 

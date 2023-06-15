@@ -96,5 +96,43 @@ export const store = reactive({
             title: "Praesent Morbi",
             text: ["Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, iusto magnam? Alias perferendis est eaque exercitationem id vel sunt soluta iusto expedita laboriosam. At, quos laboriosam asperiores iste tempora dolore!"]
         }
+    ],
+    classCardData: [
+        {
+            id: 1,
+            name: "Little Lambs",
+            description: "Class name",
+            image: "class_01",
+            age: "12-24",
+            ageCount: "month",
+            size: "9"
+        },
+        {
+            id: 2,
+            name: "Bouncy Bears",
+            description: "Class name",
+            image: "class_02",
+            age: "2-3",
+            ageCount: "years",
+            size: "12"
+        },
+        {
+            id: 3,
+            name: "Tenderhearts",
+            description: "Class name",
+            image: "class_03",
+            age: "3-4",
+            ageCount: "years",
+            size: "15"
+        },
+        {
+            id: 4,
+            name: "Shining Stars",
+            description: "Class name",
+            image: "class_04",
+            age: "4-5",
+            ageCount: "years",
+            size: "20"
+        }
     ]
 })

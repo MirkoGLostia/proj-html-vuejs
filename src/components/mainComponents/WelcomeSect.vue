@@ -19,7 +19,7 @@ export default {
 
 <template>
     <TitleGeneral title="Welcome to Fable" message="Fable daycare, preschool, and kindergarten" />
-    <section>
+    <section id="main-welcome-nav">
         <div v-for="info in store.welcomeSectNav" :key="info.id">
             <NavigationCard :details="info" :class="{ 'violet': info.id % 2 === 0, '': !info.id % 2 !== 0 }" />
         </div>
@@ -33,7 +33,7 @@ export default {
 @use './../../styles/partials/variables' as v;
 @use './../../styles/partials/mixins' as *;
 
-main>section {
+main>#main-welcome-nav {
     @include myBaseContainerCenter;
 
     .navigation-card-style {
